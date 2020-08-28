@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+}
+
+header{
+    background:#1b2127;
+    color: white;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure{
+    margin: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+}
+
+.menu{
+    height: inherit;
+}
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    line-height: 1.1em; /*separacion del interlineado*/
+    /*font-weight: 900;*/
+    letter-spacing: -.2px;  /*separa o une las letras de un texto*/
+    /*text-transform: capitalize;
+    text-decoration: underline;*/
+    color: white;
+    /*font-style: normal;
+    color: teal;*/
+}
+
+.hero{
+    /* height: 400px; */
+    background: #1b2127;
+    /* background-image: url('../images/hero.jpg'); */
+    /* background-size: 600px 400px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.wrapper img{
+    object-fit: cover;
+}
+
+/*.hero-details{
+    border: 1px solid red;
+    height: inherit;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+body section h1 strong{
+    color: #026fff;
+}
+
+h1{
+    margin: 0;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+}
+
+.portfolio{
+    background:#fafafa;
+    margin-top: 10px;
+}
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    /*margin-bottom: 15px;*/
+    padding: 0 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.project-title{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.project-course, 
+.project-date, .project-url{
+    margin: 5px 0; 
+}
+
+.project-details{
+    width: 500px;
+}
+
+.project-imageContainer{
+    width: 500px;
+    margin: 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+section h2{
+    margin: 0;
+    padding: 15px;
+}
+
+/*.flexbox{
+    border: 1px solid blue;
+    display: flex;
+    height: 200px;
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    border: 1px solid red;
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    /*margin-bottom: 10px;
+}*/
+
+body h2{
+    margin: 0;
+    padding: 15px;
+}
+
+.expe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience{
+    /* border: 1px solid gray; */
+    width: 420px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-radius: 10px;
+    overflow: hidden; /*oculta los bordes que se salen de su contenedor*/
+    flex-shrink: 0; /*Obliga que los tamaños de alto y ancho permanezcan intactos*/
+    background-color: #f4fbff;
+    margin: 10px;
+}
+
+.experience-imageContainer{
+    margin: 0;
+}
+
+.experience-imageContainer img{
+    margin: 0;
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /*mejora la calidad de la imagen haciendo zoom*/
+}
+
+.experience-detail{
+    margin: 20px;
+    margin-top: -45px;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+    position: relative; /*Pone el elemento encima de otro (su padre)*/
+    padding: 20px;
+}
+
+.experience-description{
+    text-align: left;
+}
+
+.experience-link{
+    border: 1px solid #026fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #026fff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.form{
+    background-color: #026fff;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email input{
+    background-image: url(../images/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 5px 20px 5px 28px;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form-email button{
+    display: block;
+    background-color: #026fff;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 35px;
+}   
+
+.form-email-social{
+    display: flex;
+    align-items: center;
+}
+
+.form-link{
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+}
+
+.form-link.linkedin{
+    margin-right: 20px;
+    background-image: url(../images/linkedin.svg);
+}
+
+.form-link.github{
+    background-image: url(../images/github.svg)
+}
+
+.footer{
+    background: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div p a{
+    color: white;
+}
+
+footer img{
+    vertical-align: middle;
+}
+
+.wrapper{
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+}
