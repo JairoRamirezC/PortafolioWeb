@@ -1,2 +1,2 @@
 # PrentacionWeb
-Página desarrollada con HTML y CSS
+Página ejemplo de portafolio desarrollada con HTML y CSS
