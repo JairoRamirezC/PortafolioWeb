@@ -23,10 +23,6 @@ header figure{
     height: inherit;
 }
 
-.menu{
-    /* height: inherit; */
-}
-
 ol {
     list-style: none;
     margin: 0;
@@ -46,13 +42,10 @@ h1{
     font-family: 'Tangerine', cursive;
     font-size: 50px;
     line-height: 1.1em; /*separacion del interlineado*/
-    /*font-weight: 900;*/
     letter-spacing: -.2px;  /*separa o une las letras de un texto*/
     /*text-transform: capitalize;
     text-decoration: underline;*/
     color: white;
-    /*font-style: normal;
-    color: teal;*/
     margin: none;
 }
 
@@ -67,6 +60,10 @@ h1{
 
 .wrapper img{
     object-fit: cover;
+}
+
+.hero img{
+    width: 50%;
 }
 
 body section h1 strong{
@@ -142,7 +139,7 @@ body h2{
 }
 
 .experience{
-    width: 420px;
+    width: 40%;
     border-radius: 10px;
     overflow: hidden; /*oculta los bordes que se salen de su contenedor*/
     flex-shrink: 0; /*Obliga que los tamaños de alto y ancho permanezcan intactos*/
@@ -156,7 +153,8 @@ body h2{
 
 .experience-imageContainer img{
     margin: 0;
-    width: 480px;
+    /* width: 480px; */
+    width: 100%;
     height: 200px;
     object-fit: cover; /*mejora la calidad de la imagen haciendo zoom*/
 }
@@ -169,6 +167,7 @@ body h2{
     text-align: center;
     position: relative; /*Pone el elemento encima de otro (su padre)*/
     padding: 20px;
+    z-index: 1;
 }
 
 .experience-description{
@@ -239,7 +238,7 @@ body h2{
     background: #1b2127;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -252,8 +251,9 @@ footer img{
 }
 
 .wrapper{
-    /* height: inherit; */
+    height: inherit;
     margin: 0 auto;
+    /* max-width: 80%; */
     /* border: 1px solid red; */
     display: inherit;
     align-items: inherit;
@@ -262,15 +262,28 @@ footer img{
     flex: 1;
 }
 
-@media screen and (min-width:1024px){
-    /* .wrapper{
+@media screen and (min-width:831px){
+    /* .experience-imageContainer .experience-image{
+        width: 100%;
+    } */
+
+    .wrapper{
         height: inherit;
         margin: 0 auto;
-        border: 1px solid red;
+        max-width: 1000px;
+        /* border: 1px solid red; */
         display: inherit;
         align-items: inherit;
         justify-content: inherit;
-    } */
+        flex-wrap: inherit;
+        flex: 1;
+    }
+
+    .header{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width: 830px){
@@ -303,10 +316,89 @@ footer img{
     .project-imageContainer{
         width: 100%;
     }
+
+    .experience{
+        width: 40%;
+        flex-shrink: 1;
+    }
 }
 
 @media screen and (max-width: 480px){
-    body{
-        border: 10px solid green;
+    .hero{
+        /* height: 300px; */
+        position: relative;
+        padding: 6em;
+        overflow: hidden;
+    }
+    
+    .hero img{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        filter: opacity(80%) blur(1px);
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .hero h1{
+        font-size: 35px;
+        position: absolute;
+        z-index: 2;
+        text-shadow: 1px 2px 2px #000;
+        top: 0;
+        left: 10%;
+        /* left: 20%;
+        top: 15%; */
+    }
+
+    .project-details{
+        font-size: 10px;
+    }
+
+    .project-title{
+        font-size: 2em;
+    }
+    .project-course{
+        font-size: 1.2em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-url{
+        font-size: 1.2em;
+    }
+    .project-description{
+        font-size: 1.5em;
+    }
+
+    .expe{
+        display: block;
+    }
+
+    .experience{
+        width: auto;
+    }
+
+    .form{
+        height: auto;
+        display: block;
+        border: 1px solid transparent;
+        text-align: center;
+    }
+
+    .form-email-social{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .form-email > button{
+        margin: 10px auto;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        padding: 1px;
     }
 }
